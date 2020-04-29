@@ -1,0 +1,87 @@
+/*variables*/
+
+$colorazul: #131A55;
+$colorvioleta: #351772;
+$colormorado: #97258E;
+$colorceleste: #A0AAFF;
+$base-font-size: 16px;
+$font-family: 'Poppins', sans-serif;
+$text-white: #ffffff;
+
+
+
+/*mixin*/
+@mixin header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99999999;
+}
+ @mixin menu {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+ }
+ 
+ @mixin boton-blanco{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #131A55;
+    font-weight: 500;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+ }
+@mixin boton-azul{
+    background-color: #131A55;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+}
+@mixin titulos {
+    text-align: center;
+    color: $colorazul;
+    font-weight: 600;
+    font-size: 32px;
+}
+@mixin subtitulos {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #292929;
+    text-align: center;
+}
+@mixin header-cardtop{
+    background-color: $colorceleste;
+    color: $colorazul;
+    height: 58px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin titulo-card {
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+@mixin textollamativo {
+    font-weight: 500;
+    font-size: 20px;
+}
+@font-face{
+    font-family: "ArcadeIn";
+    src: url(../img/ArcadeIn.ttf);
+    }

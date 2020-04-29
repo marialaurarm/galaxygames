@@ -1,0 +1,362 @@
+/*variables*/
+/*mixin*/
+@font-face {
+  font-family: "ArcadeIn";
+  src: url(../img/ArcadeIn.ttf); }
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f0f0f0; }
+
+.bg-dark {
+  background-color: #351772 !important; }
+  .bg-dark .logo {
+    width: 77px;
+    height: 55.91px; }
+  .bg-dark .boton {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #131A55;
+    font-weight: 500;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px; }
+  .bg-dark .navbar-toggler {
+    border: none; }
+
+#home {
+  background-color: #351772;
+  height: 100vh;
+  background-image: url(../img/background.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  #home .headline {
+    text-align: center;
+    padding-top: 220px; }
+    #home .headline .homeline {
+      color: white;
+      font-weight: 600;
+      font-size: 32px;
+      margin: 20px 20px 10px 20px; }
+    #home .headline p {
+      color: #ffffff; }
+    #home .headline .boton-2 {
+      background-color: #131A55;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      width: 200px;
+      height: 40px; }
+
+.titulos {
+  text-align: center;
+  color: #131A55;
+  font-weight: 600;
+  font-size: 32px; }
+
+.subtitulos {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #292929;
+  text-align: center; }
+
+#topdevideojuegos {
+  padding: 100px; }
+  #topdevideojuegos .bg-light {
+    opacity: 70%;
+    color: #351772;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
+  #topdevideojuegos .card-top {
+    background-color: white;
+    border-radius: 5px; }
+    #topdevideojuegos .card-top .header-cardtop {
+      background-color: #A0AAFF;
+      color: #131A55;
+      height: 58px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      #topdevideojuegos .card-top .header-cardtop h5 {
+        margin-left: 20px;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 0; }
+      #topdevideojuegos .card-top .header-cardtop .badge {
+        font-size: 18px;
+        margin: 5px; }
+  #topdevideojuegos .card-content {
+    padding: 20px; }
+    #topdevideojuegos .card-content .fecha {
+      font-size: 20px;
+      font-weight: 500; }
+    #topdevideojuegos .card-content .boton {
+      background-color: #131A55;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      width: 200px;
+      height: 40px;
+      padding: 5px 10px 5px 10px;
+      font-size: 18px; }
+
+#estrenos {
+  padding: 100px; }
+  #estrenos .card {
+    padding: 0 0 0 0; }
+
+.colortabs {
+  color: #131A55;
+  font-size: 16px;
+  font-weight: 500; }
+
+.colorheader {
+  background-color: #131A55;
+  color: #ffffff;
+  font-size: 20px; }
+
+.imagegames {
+  margin-right: 10px; }
+
+#tiendaonline {
+  padding: 100px; }
+  #tiendaonline ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 0; }
+  #tiendaonline .shopimg {
+    height: 195px;
+    width: 348px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  #tiendaonline .card-content {
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px; }
+  #tiendaonline .card-title {
+    font-weight: 500;
+    font-size: 20px; }
+  #tiendaonline .precio {
+    font-weight: 500;
+    font-size: 20px;
+    color: #131A55; }
+  #tiendaonline .boton {
+    background-color: #131A55;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    padding: 5px 10px 5px 10px; }
+  #tiendaonline .contenedor {
+    position: relative;
+    width: 100%; }
+  #tiendaonline .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(151, 37, 141, 0.466); }
+  #tiendaonline .contenedor:hover .overlay {
+    opacity: 1; }
+  #tiendaonline #text {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  #tiendaonline .escala {
+    animation-duration: 4s;
+    animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#contacto {
+  padding-top: 20px; }
+  #contacto .boton {
+    background-color: #131A55;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    padding: 5px 20px 5px 10px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+
+footer {
+  background-color: #351772;
+  color: #ffffff;
+  font-weight: 500;
+  bottom: 0;
+  margin-top: 30px;
+  padding: 20px; }
+
+#error {
+  background-color: #351772;
+  height: 100vh;
+  background-image: url(../img/bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 150px; }
+  #error img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto; }
+  #error h6 {
+    font-family: 'ArcadeIn';
+    font-size: 60px;
+    color: white;
+    text-align: center; }
+  #error p {
+    color: white;
+    text-align: center;
+    font-size: 22px; }
+  #error a {
+    background-color: #131A55;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 3px; }
+
+@media (max-width: 640px) {
+  body {
+    font-size: 12px; }
+  #home {
+    height: 600px;
+    background-image: url(../img/backgroundmobile.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-right: 20px;
+    padding-left: 20px; }
+    #home .headline {
+      padding-top: 200px; }
+      #home .headline .homeline {
+        font-size: 18px; }
+  .titulos {
+    font-size: 22px; }
+  .subtitulos {
+    font-size: 12px; }
+  #topdevideojuegos {
+    padding: 20px; }
+    #topdevideojuegos .bg-light {
+      opacity: 70%;
+      color: #351772;
+      background-color: #ffffff;
+      left: 0;
+      bottom: 0;
+      width: 100%; }
+    #topdevideojuegos .card-top .header-cardtop h5 {
+      font-size: 14px; }
+    #topdevideojuegos .card-top .header-cardtop .badge {
+      font-size: 14px;
+      margin: 3px; }
+    #topdevideojuegos .card-content {
+      padding: 20px; }
+      #topdevideojuegos .card-content .fecha {
+        font-size: 12px; }
+      #topdevideojuegos .card-content .boton {
+        background-color: #131A55;
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 16px;
+        width: 200px;
+        height: 40px;
+        padding: 5px 10px 5px 10px;
+        font-size: 18px; }
+  #estrenos {
+    padding: 20px; }
+    #estrenos .card {
+      padding: 0; }
+    #estrenos .colortabs {
+      color: #131A55;
+      font-size: 12px;
+      font-weight: 500; }
+    #estrenos .colorheader {
+      background-color: #131A55;
+      color: #ffffff;
+      font-size: 20px; }
+    #estrenos .card-title {
+      text-align: center !important; }
+    #estrenos .imagegames {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px; }
+  #tiendaonline {
+    padding: 20px; }
+    #tiendaonline ul {
+      list-style-type: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+    #tiendaonline .shopimg {
+      height: 97.5px;
+      width: 174px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    #tiendaonline .card-title, #tiendaonline .card-content {
+      font-size: 12px; }
+  form .boton {
+    background-color: #131A55;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px; }
+  #error h6 {
+    font-size: 30px; }
+  #error p, #error a {
+    font-size: 16px; } }

@@ -1,0 +1,366 @@
+@import "variables-mixin.scss";
+
+
+body{
+    font-size: $base-font-size;
+    font-family: $font-family;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.bg-dark{
+    background-color: #351772 !important;
+    .logo{
+        width: 77px;
+        height: 55.91px;
+    }
+    .boton{
+        @include boton-blanco;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+
+}
+
+ #home{
+     background-color: $colorvioleta;
+     height: 100vh;
+     background-image: url(../img/background.png);
+     background-position: bottom;
+     background-repeat: no-repeat;
+     background-size: 100%;
+     .headline{
+        text-align: center;
+        padding-top: 220px;
+        .homeline{
+            color: white;
+            font-weight: 600;
+            font-size: 32px;
+            margin: 20px 20px 10px 20px;
+        }
+        p{
+            color: $text-white;
+        }
+        .boton-2{
+            @include boton-azul;
+        }
+    }
+ }
+ .titulos{
+    @include titulos;
+}
+.subtitulos{
+    @include subtitulos;
+}
+ #topdevideojuegos{
+     padding: 100px;
+     .bg-light{
+        opacity: 70%;
+        color: #351772;
+        background-color: #ffffff;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+     .card-top{
+         background-color: white;
+         border-radius: 5px;
+         
+     .header-cardtop{
+         @include header-cardtop;
+         h5{
+             @include titulo-card;
+         }
+         .badge{
+            font-size: 18px;
+            margin: 5px;
+         }
+     }
+    }
+    .card-content{
+        padding: 20px;
+        .fecha{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .boton{
+            @include boton-azul;
+            padding: 5px 10px 5px 10px;
+            font-size: 18px;
+        }
+    }
+ }
+#estrenos{
+    padding: 100px;
+    .card{
+        padding: 0 0 0 0;
+    }
+    }
+    .colortabs{
+        color: $colorazul;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .colorheader{
+        background-color: $colorazul;
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .imagegames{
+        margin-right: 10px;
+    }
+
+#tiendaonline{
+    padding:100px;
+    ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-left: 0;
+}
+    .shopimg{
+        height: 195px;
+        width: 348px;
+        border-top-left-radius: 5px ;
+        border-top-right-radius: 5px ;
+    }
+    .card-content{
+        background-color: #ffffff;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 20px;
+    }
+    .card-title{
+        @include textollamativo;
+    }
+    .precio{
+        @include textollamativo;
+        color: $colorazul;
+    }
+    .boton{
+        @include boton-azul;
+        padding: 5px 10px 5px 10px;
+    }
+    .contenedor {
+        position: relative;
+        width: 100%;
+      }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(151, 37, 141, 0.466);
+      }
+      
+      .contenedor:hover .overlay {
+        opacity: 1;
+      }
+      
+    #text {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+       
+      }
+    
+      .escala {
+        animation-duration: 4s;
+        animation-name: aparecer;
+     }
+     
+     
+     @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+     }
+}
+#contacto{
+    padding-top: 20px;
+    .boton{
+        @include boton-azul;
+        padding: 5px 20px 5px 10px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+footer{
+    background-color: $colorvioleta;
+    color: #ffffff;
+    font-weight: 500;
+    bottom: 0;
+    margin-top: 30px;
+    padding: 20px;
+}
+#error{
+    background-color: $colorvioleta;
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+    h6{
+     font-family: 'ArcadeIn';
+     font-size: 60px;
+     color: white;
+     text-align: center;
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-size: 22px;
+    }
+    a{
+        @include boton-azul;
+        display: block;
+        margin: auto;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 3px;
+    }
+   
+}
+@media (max-width: 640px) {
+    body{
+        font-size: 12px;
+    }
+    #home{
+        height: 600px;
+        background-image: url(../img/backgroundmobile.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        .headline{
+           padding-top: 200px;
+           .homeline{
+               font-size: 18px;
+           }
+       }
+    }
+    .titulos{
+        font-size: 22px;
+    }
+    .subtitulos{
+        font-size: 12px;
+    }
+    #topdevideojuegos{
+        padding: 20px;
+        .bg-light{
+           opacity: 70%;
+           color: #351772;
+           background-color: #ffffff;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+       }
+        .card-top{
+          
+      
+        .header-cardtop{
+            h5{
+                font-size: 14px;
+            }
+            .badge{
+               font-size: 14px;
+               margin: 3px;
+            }
+        }
+       }
+       .card-content{
+           padding: 20px;
+           .fecha{
+               font-size: 12px;
+           }
+           .boton{
+               @include boton-azul;
+               padding: 5px 10px 5px 10px;
+               font-size: 18px;
+           }
+       }
+    }
+    #estrenos{
+        padding: 20px;
+        .card{
+            padding: 0;
+        }
+        .colortabs{
+            color: $colorazul;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .colorheader{
+            background-color: $colorazul;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .card-title{
+            text-align:center !important;
+        }
+    
+        .imagegames{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 10px;
+        }
+    }
+    #tiendaonline{
+        padding: 20px;
+        ul{
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+        .shopimg{
+            height: 97.5px;
+            width: 174px;
+            border-top-left-radius: 5px ;
+            border-top-right-radius: 5px ;
+        }
+        .card-title, .card-content{
+            font-size: 12px;
+        }
+
+    }
+    form .boton{
+        @include boton-azul;
+        padding: 5px 10px 5px 10px;
+        font-size: 18px;
+    }
+    #error{
+        h6{
+         font-size: 30px;
+        }
+        p,a{
+            font-size: 16px;
+        } 
+    }
+}
+
